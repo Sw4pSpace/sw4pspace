@@ -22,7 +22,6 @@ a {
 
 .root-display {
     position: relative;
-    background-color: var(--primary-fg);
     height: 100%;
     width: 100%;
 }
@@ -113,6 +112,17 @@ a {
     font-size: 32px;
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace !important;
+}
+
+.projects-container {
+    max-width: 60%;
+    display: block;
+    margin: auto;
+    background-color: var(--primary-fg);
+}
+
+.projects-container github-repository {
+    margin: var(--magic-num);
 }
 
 .root-container .root-header .nav-links {
