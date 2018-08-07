@@ -11,20 +11,19 @@
     "angular-loader": "~1.5.0",
     "angular-mocks": "~1.5.0",
     "html5-boilerplate": "^5.3.0",
-    "paper-button": "^2.1.1",
-    "paper-icon-button": "^2.2.0",
-    "iron-icons": "^2.1.1",
-    "paper-elements": "^1.0.7",
-    "social-links": "latest"
+    "paper-button": "^2.0.0",
+    "paper-icon-button": "^2.0.0",
+    "paper-tooltip": "^2.0.0",
+    "paper-header-panel": "^2.0.0",
+    "paper-toolbar": "^2.0.0",
+    "social-links": "latest",
+    "contrib-card": "git://github.com/Sw4pSpace/contrib-card.git",
+    "sw4p-header": "git://github.com/Sw4pSpace/sw4p-header.git",
+    "sw4p-button": "git://github.com/Sw4pSpace/sw4p-button.git",
+    "sw4p-icon": "git://github.com/Sw4pSpace/sw4p-icon.git"
   },
   "resolutions": {
-    "paper-button": "^1.0.0",
-    "webcomponentsjs": "^v1.1.0",
-    "paper-icon-button": "^2.2.0",
     "polymer": "^2.0.0",
-    "iron-image": "^2.0.0",
-    "iron-iconset-svg": "1 - 2",
-    "iron-flex-layout": "^2.0.0",
-    "paper-spinner": "^2.0.0"
+    "webcomponentsjs": "^v1.1.0"
   }
 }

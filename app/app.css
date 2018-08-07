@@ -102,7 +102,7 @@ a {
     z-index: 1;
 }
 
-.root-container .root-header paper-toolbar a, .root-container .root-header paper-toolbar a paper-button {
+.root-container .root-header sw4p-header a, .root-container .root-header sw4p-header a sw4p-button {
     height: 100%;
     margin: 0;
 }

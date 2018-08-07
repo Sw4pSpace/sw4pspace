@@ -13,20 +13,10 @@
     <title>Sw4pSpace</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet">
 
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="stylesheet" href="app.css">
     <link rel="import" href="elements.html"/>
-
-    <style is="custom-style">
-        paper-toolbar.red {
-            --paper-toolbar-background: var(--paper-grey-900);
-        }
-        paper-card.grey {
-            --paper-card-background-color: var(--paper-grey-200);
-        }
-    </style>
-
 </head>
 
 <body style="height: 100%;width: 100%;bottom: 0;position: absolute;background-color: var(--primary-fg);">
@@ -38,13 +28,15 @@
 
 <div class="root-container">
     <div class="root-header">
-        <paper-toolbar slot="header" class="red">
-            <div slot="top" class="nav-logo title">Sw4pSpace</div>
-            <a href="/#!/home"><paper-button slot="top">Home</paper-button></a>
-            <a href="/#!/projects"><paper-button slot="top">Projects</paper-button></a>
-            <a href="/#!/downloads"><paper-button slot="top">Downloads</paper-button></a>
-            <a href="/#!/home"><paper-button slot="top">About</paper-button></a>
-        </paper-toolbar>
+        <sw4p-header>
+            <div slot="title">Sw4pSpace</div>
+            <div slot="menu">
+                <a href="/#!/home"><sw4p-button>Home</sw4p-button></a>
+                <a href="/#!/tools"><sw4p-button>Tools</sw4p-button></a>
+                <a href="/#!/projects"><sw4p-button>Projects</sw4p-button></a>
+                <a href="/#!/home"><sw4p-button>About</sw4p-button></a>
+            </div>
+        </sw4p-header>
     </div>
 
     <div class="root-content">
@@ -60,6 +52,6 @@
 <script src="app.js"></script>
 <script src="pages/home/home.js"></script>
 <script src="pages/projects/projects.js"></script>
-<script src="pages/downloads/downloads.js"></script>
+<script src="pages/tools/tools.js"></script>
 </body>
 </html>
