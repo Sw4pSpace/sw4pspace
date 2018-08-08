@@ -13,19 +13,12 @@
     <title>Sw4pSpace</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="stylesheet" href="app.css">
     <link rel="import" href="elements.html"/>
 </head>
 
-<body style="height: 100%;width: 100%;bottom: 0;position: absolute;background-color: var(--primary-fg);">
-
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-
+<body>
 <div class="root-container">
     <div class="root-header">
         <sw4p-header>
@@ -38,16 +31,12 @@
             </div>
         </sw4p-header>
     </div>
-
     <div class="root-content">
         <div ng-view class="root-display"></div>
     </div>
 </div>
 
-<!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
-<script src="bower_components/angular/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
 <script src="pages/home/home.js"></script>
