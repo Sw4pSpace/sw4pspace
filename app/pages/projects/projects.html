@@ -1,6 +1,6 @@
-<div class="projects-container">
-    <github-repository owner-repo="Sw4pSpace/sw4pspace"></github-repository>
-    <github-repository owner-repo="Sw4pSpace/Log"></github-repository>
-    <github-repository owner-repo="Sw4pSpace/sw4p-elements"></github-repository>
+<div ng-controller="ProjectsCtrl" class="projects-container">
+    <div ng-repeat="project in projects">
+        <github-repository owner-repo="{{project}}"></github-repository>
+    </div>
 </div>
 

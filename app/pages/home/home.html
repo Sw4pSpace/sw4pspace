@@ -1,23 +1,16 @@
-<!--<div class="avatar-container">
-    <img class="avatar" src="https://avatars0.githubusercontent.com/u/31785177?s=460&v=4" width="150" height="150"/>
-    <span class="name">Jack DeSive</span>
-    <span class="links"><a href="https://github.com/jdesive">@jdesive</a> | <a href="/">sw4pspace.com</a></span>
-    <span class="title">Software Engineer/Architect</span>
-    <span class="bio">Open Source - Java - C# - C++ - Python - Coffeescript - GWT - Polymer - Angular</span>
-    <div style="margin: 0 auto; width: 142px;">
-        <github-link href="https://github.com/mcSw4p" height="24px" color="black"></github-link>
-        <twitter-link href="" height="24px" disabled="true" color="black"></twitter-link>
-        <youtube-link href="" height="24px" disabled="true" color="black"></youtube-link>
+<div ng-controller="HomeCtrl">
+    <div ng-repeat="mem in team">
+        <contrib-card src="{{trustSrc(mem.avatar)}}">
+            <div class="name">{{mem.name}}</div>
+            <div class="links">{{mem.links}}</div>
+            <div class="title">{{mem.title}}</div>
+            <div class="bio">{{mem.bio}}</div>
+            <div class="actions">
+                <sw4p-icon icon="github"></sw4p-icon>
+                <sw4p-icon icon="twitter"></sw4p-icon>
+                <sw4p-icon icon="youtube"></sw4p-icon>
+            </div>
+        </contrib-card>
     </div>
-</div>-->
-<contrib-card src="https://avatars0.githubusercontent.com/u/31785177?s=460&v=4">
-    <div class="name">Jack DeSive</div>
-    <div class="links">@jdesive | sw4pspace.com</div>
-    <div class="title">Software Engineer/Architect</div>
-    <div class="bio">Open Source - Java - C# - C++ - Python - Coffeescript - GWT - Polymer - Angular</div>
-    <div class="actions">
-        <sw4p-icon icon="github"></sw4p-icon>
-        <sw4p-icon icon="twitter"></sw4p-icon>
-        <sw4p-icon icon="youtube"></sw4p-icon>
-    </div>
-</contrib-card>
+
+</div>

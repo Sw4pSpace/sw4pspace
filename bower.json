@@ -16,11 +16,7 @@
     "paper-tooltip": "^2.0.0",
     "paper-header-panel": "^2.0.0",
     "paper-toolbar": "^2.0.0",
-    "social-links": "latest",
-    "contrib-card": "git://github.com/Sw4pSpace/contrib-card.git",
-    "sw4p-header": "git://github.com/Sw4pSpace/sw4p-header.git",
-    "sw4p-button": "git://github.com/Sw4pSpace/sw4p-button.git",
-    "sw4p-icon": "git://github.com/Sw4pSpace/sw4p-icon.git"
+    "sw4p-elements": "git@github.com:Sw4pSpace/sw4p-elements.git"
   },
   "resolutions": {
     "polymer": "^2.0.0",

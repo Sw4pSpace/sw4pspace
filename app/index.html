@@ -10,11 +10,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Sw4pSpace</title>
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- App CSS -->
     <link rel="stylesheet" href="app.css">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- App files -->
+    <script src="app.js"></script>
+    <script src="pages/home/home.js"></script>
+    <script src="pages/projects/projects.js"></script>
+    <script src="pages/tools/tools.js"></script>
+
+    <!-- Polymer -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="elements.html"/>
 </head>
 
@@ -35,12 +51,5 @@
         <div ng-view class="root-display"></div>
     </div>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="app.js"></script>
-<script src="pages/home/home.js"></script>
-<script src="pages/projects/projects.js"></script>
-<script src="pages/tools/tools.js"></script>
 </body>
 </html>

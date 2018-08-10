@@ -7,6 +7,12 @@ angular.module('myApp.projects', ['ngRoute'])
         });
     }])
 
-    .controller('ProjectsCtrl', [function () {
+    .controller('ProjectsCtrl', function($scope) {
 
-    }]);
+        $scope.projects = [
+            'Sw4pSpace/sw4pspace',
+            'Sw4pSpace/Log',
+            'Sw4pSpace/sw4p-elements'
+        ]
+
+    });
