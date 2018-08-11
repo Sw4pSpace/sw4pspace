@@ -1,8 +1,8 @@
 'use strict';
 
-describe('myApp.home module', function() {
+describe('sw4pspace.home module', function() {
 
-  beforeEach(module('myApp.home'));
+  beforeEach(module('sw4pspace.home'));
 
   describe('home controller', function(){
 

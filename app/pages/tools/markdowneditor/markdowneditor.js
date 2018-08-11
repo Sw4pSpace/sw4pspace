@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.tools.markdowneditor', ['ngRoute'])
+angular.module('sw4pspace.tools.markdowneditor', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/tools/markdowneditor', {
             templateUrl: 'pages/tools/markdowneditor/markdowneditor.html',

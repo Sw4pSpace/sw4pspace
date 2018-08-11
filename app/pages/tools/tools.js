@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.tools', ['ngRoute'])
+angular.module('sw4pspace.tools', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/tools', {
             templateUrl: 'pages/tools/tools.html',

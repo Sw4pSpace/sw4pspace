@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.tools.jsoneditor', ['ngRoute'])
+angular.module('sw4pspace.tools.jsoneditor', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/tools/jsoneditor', {
             templateUrl: 'pages/tools/jsoneditor/jsoneditor.html',

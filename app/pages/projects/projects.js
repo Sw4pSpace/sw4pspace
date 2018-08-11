@@ -1,4 +1,4 @@
-angular.module('myApp.projects', ['ngRoute'])
+angular.module('sw4pspace.projects', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/projects', {
