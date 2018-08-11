@@ -14,7 +14,10 @@
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
     "protractor": "^4.0.9",
-    "ecstatic": "^2.0.0"
+    "ecstatic": "^2.0.0",
+    "adm-zip": "^0.4.11",
+    "https-proxy-agent": "^2.2.0",
+    "lodash": "^4.17.5"
   },
   "scripts": {
     "postinstall": "bower install",
