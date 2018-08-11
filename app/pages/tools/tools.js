@@ -7,6 +7,8 @@ angular.module('myApp.tools', ['ngRoute'])
             controller: 'ToolsCtrl'
         });
     }])
-    .controller('ToolsCtrl', [function () {
-
-    }]);
+    .controller('ToolsCtrl', function ($scope) {
+        if(!$scope.simplemde) {
+            $scope.simplemde = new SimpleMDE({element: document.getElementById('markdownEditor')});
+        }
+    });

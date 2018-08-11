@@ -65,3 +65,31 @@ html, body {
     background-color: black;
     color: white;
 }
+
+.json-editor-container, .json-editor-container .right {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.json-editor-container .right {
+    flex-flow: column;
+}
+
+
+.json-editor-container .right, .json-editor-container .left {
+    flex: 1 1 auto;
+    max-width: 50%;
+    height: 100%;
+}
+
+.json-editor-container .right .buttons{
+    flex: 0 1 20%;
+    margin: 16px;
+}
+
+.json-editor-container .right .display, .json-editor-container .right .minified{
+    flex: 1 1 auto;
+    width: 90%;
+}

@@ -1,0 +1,17 @@
+<div ng-controller="JSONEditorCtrl" class="json-editor-container">
+    <div class="left">
+        <juicy-jsoneditor id="jsonEditor" search="false" mode="tree" style="height: 100%"></juicy-jsoneditor>
+    </div>
+    <div class="right">
+        <div class="buttons">
+            <sw4p-button ng-click="_setJSON()">Get JSON</sw4p-button>
+            <sw4p-button ng-click="_reset()">Reset</sw4p-button>
+        </div>
+        <div class="display">
+            <paper-textarea id="json" label="JSON"></paper-textarea>
+        </div>
+        <div class="minified">
+            <paper-textarea id="minifiedJson" label="Minified JSON"></paper-textarea>
+        </div>
+    </div>
+</div>

@@ -21,6 +21,6 @@ angular.module('myApp.home', ['ngRoute'])
                 title: 'Software Engineer/Architect',
                 bio: 'Open Source - Java - C# - C++ - Python - Coffeescript - GWT - Polymer - Angular'
             }
-        ]
+        ];
 
     });
