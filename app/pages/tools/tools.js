@@ -8,7 +8,18 @@ angular.module('myApp.tools', ['ngRoute'])
         });
     }])
     .controller('ToolsCtrl', function ($scope) {
-        if(!$scope.simplemde) {
-            $scope.simplemde = new SimpleMDE({element: document.getElementById('markdownEditor')});
-        }
+
+        $scope.tools = [
+            {
+                name: "Markdown Editor",
+                description: "An Editor for writing beautiful and understandable Markdown even for less experienced users.",
+                href: "/#!/tools/markdowneditor"
+            },
+            {
+                name: "JSON Editor",
+                description: "A web-based tool to view, edit, format, and validate JSON.",
+                href: "/#!/tools/jsoneditor"
+            }
+        ]
+
     });

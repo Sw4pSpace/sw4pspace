@@ -1,14 +1,12 @@
-<div class="tools-container">
+<div ng-controller="ToolsCtrl" class="tools-container">
     <div class="spacers"></div>
     <div class="tools-content">
-        <sw4p-tool href="/#!/tools/markdowneditor">
-            <span slot="title">Markdown Editor</span>
-            <span slot="description">An Editor for writing beautiful and understandable Markdown even for less experienced users.</span>
-        </sw4p-tool>
-        <sw4p-tool href="/#!/tools/jsoneditor">
-            <span slot="title">JSON Editor</span>
-            <span slot="description">A web-based tool to view, edit, format, and validate JSON.</span>
-        </sw4p-tool>
+        <div ng-repeat="tool in tools">
+            <sw4p-tool href="{{tool.href}}">
+                <span slot="title">{{tool.name}}</span>
+                <span slot="description">{{tool.description}}</span>
+            </sw4p-tool>
+        </div>
     </div>
     <div class="spacers"></div>
 </div>
