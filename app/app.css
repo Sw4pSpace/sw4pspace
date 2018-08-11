@@ -93,3 +93,20 @@ html, body {
     flex: 1 1 auto;
     width: 90%;
 }
+
+.tools-container {
+    display: flex;
+    flex-flow: row;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+.tools-container .tools-content {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.tools-container .spacers {
+    flex: 0 1 50%;
+}
