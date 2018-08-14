@@ -9,7 +9,6 @@ angular.module('sw4pspace', [
     'sw4pspace.tools.markdowneditor',
     'sw4pspace.tools.jsoneditor'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
-    $locationProvider.hashPrefix('!');
-
+    $locationProvider.html5Mode(true);
     $routeProvider.otherwise({redirectTo: '/home'});
 }]);
