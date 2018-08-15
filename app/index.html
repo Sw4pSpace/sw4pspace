@@ -31,16 +31,13 @@
     <script src="pages/tools/markdowneditor/markdowneditor.js"></script>
     <script src="pages/tools/jsoneditor/jsoneditor.js"></script>
 </head>
-<body>
+<body ng-controller="HomeCtrl">
 <div class="root-container">
     <div class="root-header">
         <sw4p-header>
-            <div slot="title">Sw4pSpace</div>
+            <div slot="title">{{websiteTitle}}</div>
             <div slot="menu">
-                <a href="/#!/home"><sw4p-button>Home</sw4p-button></a>
-                <a href="/#!/tools"><sw4p-button>Tools</sw4p-button></a>
-                <a href="/#!/projects"><sw4p-button>Projects</sw4p-button></a>
-                <a href="http://docs.sw4pspace.com"><sw4p-button>Docs</sw4p-button></a>
+                <a ng-repeat="link in menuButtons" href="{{link.link}}"><sw4p-button>{{link.name}}</sw4p-button></a>
             </div>
         </sw4p-header>
     </div>

@@ -1,7 +1,10 @@
 'use strict';
 
-angular.module('sw4pspace.tools', ['ngRoute'])
-    .config(['$routeProvider', function ($routeProvider) {
+angular.module('sw4pspace.tools', [
+    'ngRoute',
+    'sw4pspace.tools.markdowneditor',
+    'sw4pspace.tools.jsoneditor'
+]).config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/tools', {
             templateUrl: 'pages/tools/tools.html',
             controller: 'ToolsCtrl'

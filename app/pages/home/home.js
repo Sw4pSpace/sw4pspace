@@ -8,10 +8,7 @@ angular.module('sw4pspace.home', ['ngRoute'])
         });
     }])
     .controller('HomeCtrl', function($scope, $sce) {
-
-        $scope.trustSrc = function(src) {
-          return $sce.trustAsResourceUrl(src);
-        };
+        $scope.websiteTitle = 'Sw4pSpace';
 
         $scope.team = [
             {
@@ -22,5 +19,16 @@ angular.module('sw4pspace.home', ['ngRoute'])
                 bio: 'Open Source - Java - C# - C++ - Python - Coffeescript - GWT - Polymer - Angular'
             }
         ];
+
+        $scope.menuButtons = [
+            {name: 'Home', link: '/#!/home'},
+            {name: 'Tools', link: '/#!/tools'},
+            {name: 'Projects', link: '/#!/projects'},
+            {name: 'Docs', link: 'http://docs.sw4pspace.com'}
+        ];
+
+        $scope.trustSrc = function(src) {
+            return $sce.trustAsResourceUrl(src);
+        };
 
     });
