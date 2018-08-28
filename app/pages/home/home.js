@@ -27,6 +27,17 @@ angular.module('sw4pspace.home', ['ngRoute'])
             {name: 'Docs', link: 'http://docs.sw4pspace.com'}
         ];
 
+        $scope.scripts = [
+            {src: 'bower_components/angular/angular.js'},
+            {src: 'bower_components/angular-route/angular-route.js'},
+            {src: 'sw4pspace.js'},
+            {src: 'pages/home/home.js'},
+            {src: 'pages/projects/projects.js'},
+            {src: 'pages/tools/tools.js'},
+            {src: 'pages/tools/markdowneditor/markdowneditor.js'},
+            {src: 'pages/tools/jsoneditor/jsoneditor.js'}
+        ];
+
         $scope.trustSrc = function(src) {
             return $sce.trustAsResourceUrl(src);
         };
