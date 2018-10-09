@@ -7,7 +7,7 @@ angular.module('sw4pspace.home', ['ngRoute'])
             controller: 'HomeCtrl'
         });
     }])
-    .controller('HomeCtrl', function($scope, $sce) {
+    .controller('HomeCtrl',  function($scope, $sce) {
         $scope.websiteTitle = 'Sw4pSpace';
 
         $scope.team = [
@@ -17,6 +17,37 @@ angular.module('sw4pspace.home', ['ngRoute'])
                 links: '@jdesive | sw4pspace.com',
                 title: 'Software Engineer/Architect',
                 bio: 'Open Source - Java - C# - C++ - Python - Coffeescript - GWT - Polymer - Angular'
+            }
+        ];
+
+        $scope.tools = [
+            {
+                name: "Markdown Editor",
+                description: "An Editor for writing beautiful and understandable Markdown even for less experienced users.",
+                href: "/#!/tools/markdowneditor"
+            },
+            {
+                name: "JSON Editor",
+                description: "A web-based tool to view, edit, format, and validate JSON.",
+                href: "/#!/tools/jsoneditor"
+            }
+        ];
+
+        $scope.projects = [
+            {
+                name: 'Log',
+                description: 'Spigot/Bukkit plugin to log events on server',
+                href: 'https://github.com/Sw4pSpace/Log'
+            },
+            {
+                name: 'Sls DynamoDB REST Starter',
+                description: 'Serverless REST API with DynamoDB start project',
+                href: 'https://github.com/Sw4pSpace/serverless-dynamodb-rest-poc'
+            },
+            {
+                name: 'Sw4p Elements',
+                description: 'Polymer component library for the Sw4pSpace applications',
+                href: 'https://github.com/Sw4pSpace/sw4p-elements'
             }
         ];
 

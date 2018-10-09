@@ -1,16 +1,47 @@
-<div ng-controller="HomeCtrl">
-    <div ng-repeat="mem in team">
-        <contrib-card src="{{trustSrc(mem.avatar)}}">
-            <div class="name">{{mem.name}}</div>
-            <div class="links">{{mem.links}}</div>
-            <div class="title">{{mem.title}}</div>
-            <div class="bio">{{mem.bio}}</div>
-            <div class="actions">
-                <sw4p-icon icon="github"></sw4p-icon>
-                <sw4p-icon icon="twitter"></sw4p-icon>
-                <sw4p-icon icon="youtube"></sw4p-icon>
+<div ng-controller="HomeCtrl" style="height: 100%">
+    <div class="home-header">
+        <img src="../../resources/img/logo-native.png" class="center home-logo">
+    </div>
+    <div class="home-links">
+        <div>Check out our <a class="link" href="https://github.com/Sw4pSpace">GitHub</a>!</div>
+    </div>
+
+    <div class="home-tools-container">
+
+        <div class="heading">Tools</div>
+        <div class="description">Sw4pSpace provides some web tools to make life easier. Some of the tools provided are JSON Editor, Markdown Editor, JSON Validator, JavaScript Validator and much <a class="link" href="/#!/tools">more</a>.</div>
+        <div class="content">
+            <a ng-repeat="item in tools" href="{{item.href}}" title="{{item.description}}">{{item.name}}<paper-ripple></paper-ripple></a>
+        </div>
+    </div>
+
+    <div class="home-projects-container">
+
+        <div class="heading">Projects</div>
+        <div class="description">Sw4pSpace provides a ton of open source projects for the community. Come check them out and maybe think about contributing? View <a class="link" href="/#!/projects">more</a></div>
+        <div class="content">
+            <a ng-repeat="item in projects" href="{{item.href}}" title="{{item.description}}">{{item.name}}<paper-ripple></paper-ripple></a>
+        </div>
+    </div>
+
+    <div class="home-contrib-container">
+        <div class="heading">Meet our Contributors</div>
+        <div class="description"></div>
+        <div class="content">
+            <div ng-repeat="mem in team">
+                <contrib-card src="{{trustSrc(mem.avatar)}}">
+                    <div class="name">{{mem.name}}</div>
+                    <div class="links">{{mem.links}}</div>
+                    <div class="title">{{mem.title}}</div>
+                    <div class="bio">{{mem.bio}}</div>
+                    <div class="actions">
+                        <sw4p-icon icon="github"></sw4p-icon>
+                        <sw4p-icon icon="twitter"></sw4p-icon>
+                        <sw4p-icon icon="youtube"></sw4p-icon>
+                    </div>
+                </contrib-card>
             </div>
-        </contrib-card>
+        </div>
     </div>
 
 </div>

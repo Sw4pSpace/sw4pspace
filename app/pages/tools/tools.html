@@ -1,12 +1,24 @@
-<div ng-controller="ToolsCtrl" class="tools-container">
-    <div class="spacers"></div>
-    <div class="tools-content">
-        <div ng-repeat="tool in tools">
-            <sw4p-tool href="{{tool.href}}">
-                <span slot="title">{{tool.name}}</span>
-                <span slot="description">{{tool.description}}</span>
-            </sw4p-tool>
+<div ng-controller="ToolsCtrl">
+
+    <div class="tools-title-container">
+        <div class="header">
+            Tools
+        </div>
+        <div class="description">
+            Here is a list of all of our web tools that you can use right here in your browser.
         </div>
     </div>
-    <div class="spacers"></div>
+
+    <div class="tools-container">
+        <div class="spacers"></div>
+        <div class="tools-content">
+            <div ng-repeat="tool in tools">
+                <sw4p-tool href="{{tool.href}}">
+                    <span slot="title">{{tool.name}}</span>
+                    <span slot="description">{{tool.description}}</span>
+                </sw4p-tool>
+            </div>
+        </div>
+        <div class="spacers"></div>
+    </div>
 </div>
